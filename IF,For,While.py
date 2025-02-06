@@ -92,3 +92,5 @@ if numberEx6Residue == 0:
     print(f'{numberEx6} % 3 = {numberEx6Residue}')
 else:
     print("divide with remainder")
+
+    #corrections
