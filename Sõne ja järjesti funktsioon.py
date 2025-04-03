@@ -1,3 +1,6 @@
+from tkinter import E
+
+
 tasks=[]
 while True:
     print("1-Добавить задачу")
@@ -8,7 +11,8 @@ while True:
     print("6-Посмотреть сколько задач в списке")
     print("7-Удалить весь список")
     print("8-Выйти из программы")
-    print()
+    print("9-Перевод всех в верхний регистр")
+    print("10-Перевести все первые буквы в верхний регистр")
     while True:
         try:
             valik=int(input("Твой выбор: "))
@@ -67,3 +71,13 @@ while True:
     elif valik==8:
         print("До свилания!")
         break
+    elif valik==9:
+        tasks = [task.upper() for task in tasks]  # Преобразуем все задачи в верхний регистр
+        print(f"Все задачи преобразованы в верхний регистр: {tasks}")
+        print()
+
+    elif valik==10:
+        tasks = [task.title() for task in tasks]  # Преобразуем первую букву каждой задачи в заглавную
+        print(f"Все задачи преобразованы с заглавной буквы: {tasks}")
+        print()
+
